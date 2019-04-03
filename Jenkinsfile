@@ -1,8 +1,12 @@
 #!groovy?
 
 node {
-    //deleteDir()
+    deleteDir()
 
+	stage('Descargar Fuentes') {
+			checkout scm
+    }
+	
 	 stage('Compilando con maven')
 	{		//Configuration / Global Tool COnfiguration / MAVEN jenkinsmvn  ==> MAVEN_HOME = D:\Tools\apache-maven-3.6.0
 	        def mvnHome = tool 'jenkinsmvn';
