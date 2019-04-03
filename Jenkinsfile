@@ -1,7 +1,7 @@
 #!groovy?
 
 node {
-    deleteDir()
+    //deleteDir()
 
 	 stage('Compilando con maven')
 	{		//Configuration / Global Tool COnfiguration / MAVEN jenkinsmvn  ==> MAVEN_HOME = D:\Tools\apache-maven-3.6.0
