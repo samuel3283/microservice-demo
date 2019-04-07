@@ -16,9 +16,9 @@ node {
     stage('Construyendo Docker ') {
 		   
            script{
-				bat "docker stop valaxy_demo"
-				bat "docker rm -f valaxy_demo"
-				bat "docker image rm -f valaxy_demo"
+				//bat "docker stop valaxy_demo"
+				//bat "docker rm -f valaxy_demo"
+				//bat "docker image rm -f valaxy_demo"
 				bat "docker build -t valaxy_demo ."
            }
     }
